@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  top: 50px;
+  padding: 10px 25px;
+  position: relative;
+}
+
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  gap: 20px;
+  z-index: 100;
+  padding: 10px;
+  display: flex;
+  color: white;
+  position: fixed;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  background-color: rgb(37, 37, 37);
+}
+
+header div {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header ul {
+  gap: 15px;
+  display: flex;
+}
+
+header ul li {
+  padding: 5px;
+  display: flex;
+  color: gray;
+  font-weight: 300;
+  font-size: small;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+header ul li:first-child {
+  color: white;
+}
+
+header ul li:last-child {
+  border: 1px solid gray;
+}
+
+section:first-child {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.firstSectionFirstDiv, .firstSectionSecondDiv {
+  width: 50%;
+}
+
+.firstSectionFirstDiv {
+  padding: 20px;
+  height: 400px;
+  color: white;
+  position: relative;
+  border-radius: 10px;
+  background-color: red;
+}
+
+.firstSectionLD {
+  gap: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  color: white;
+  font-size: small;
+  position: absolute;
+  flex-direction: column;
+}
+
+.firstSectionLD {
+  line-height: 23px;
+}
+
+.firstSectionLD div {
+  padding: 5px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.firstSectionLD input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  font-size: 13px;
+}
+
+.firstSectionLD button {
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: black;
+}
+
+.firstSectionSecondDiv{
+  height: 400px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-child(2) {
+  gap: 20px;
+  width: 100%;
+  display: flex;
+  margin: 40px 0;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section:nth-child(2) h3 {
+  width: 80%;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section:nth-child(2) div {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-child(2) div div{
+  width: 120px;
+  display: flex;
+  padding: 15px 20px;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+  background-color: rgb(216, 216, 216);
+}
+
+section:nth-child(3) {
+  gap: 15px;
+  display: flex;
+  height: 300px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.thirdSectionFirstDiv, .thirdSectionSecondDiv{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.thirdSectionFirstDiv h3 {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.thirdSectionFirstDiv p {
+  color: gray;
+  font-size: small;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.thirdSectionFirstDiv div{
+  gap: 10px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.thirdSectionFirstDiv div button{
+  width: 100px;
+  border: none;
+  display: flex;
+  font-size: 20px;
+  padding: 15px 25px;
+  border-radius: 5px;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(216, 216, 216);
+}
+
+.thirdSectionSecondDiv {
+  display: flex;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+section:nth-child(4) {
+  gap: 15px;
+  padding: 20px;
+  display: flex;
+  color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  align-items: center;
+  background-color: black;
+  justify-content: space-evenly;
+}
+
+.fourthSectionFirstDiv {
+  width: 50%;
+  display: flex;
+  overflow: hidden;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.fourthSectionSecondDiv {
+  width: 50%;
+  display: flex;
+  height: 300px;
+  overflow: hidden;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+section:nth-child(4) p{
+  margin: 10px 0;
+  font-size: small;
+  color: rgb(175, 175, 175);
+}
+
+section:nth-child(4) button{
+  gap: 20px;
+  padding: 5px;
+  border: none;
+  display: flex;
+  margin: 5px 0;
+  cursor: pointer;
+  text-align: left;
+  border-radius: 10px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgba(66, 66, 66, 0.411);
+}
+
+section:nth-child(4) button img{
+  width: 50px;
+}
+
+section:nth-child(4) button:active{
+  background-color: rgb(100, 100, 243);
+}
+
+section:nth-child(5) {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fifthSectionFirstDiv {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.fifthSectionFirstDiv h2 {
+  text-align: center;
+}
+
+.fifthSectionSecondDiv {
+  gap: 20px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.fifthSectionSecondDivCard {
+  gap: 7px;
+  width: 250px;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fifthSectionSecondDivCard div:first-child {
+  width: 100%;
+  display: flex;
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+}
+
+.fifthSectionSecondDivCard div:first-child img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.fifthSectionSecondDivCard div:last-child h4 {
+  line-height: 14px;
+  color: rgb(26, 26, 26);
+}
+
+.fifthSectionSecondDivCard div:last-child p {
+  font-size: small;
+  margin-top: 7px;
+  text-align: left;
+  color: rgb(78, 78, 78);
+}
+
+section:nth-child(6) {
+  gap: 15px;
+  display: flex;
+  padding: 20px;
+  color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: black;
+  justify-content: space-evenly;
+}
+
+.sixthSectionFirstDiv, .sixthSectionSecondDiv {
+  width: 50%;
+}
+
+.sixthSectionFirstDiv h3 {
+  margin-bottom: 10px;
+}
+
+.sixthSectionFirstDiv p {
+  color: gray;
+  font-size: small;
+  margin-bottom: 10px;
+}
+
+.sixthSectionFirstDiv button {
+  border: none;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  background-color: orangered;
+}
+
+.sixthSectionSecondDiv {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid red;
+}
+
+.sixthSectionSecondDiv img{
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 650px) {
+  section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .firstSectionFirstDiv, .firstSectionSecondDiv, .thirdSectionFirstDiv, .thirdSectionSecondDiv, .fourthSectionFirstDiv, .fourthSectionSecondDiv, .sixthSectionFirstDiv, .sixthSectionSecondDiv {
+    width: 100%;
+  }
+
+  section:nth-child(3)  {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    padding: 10px;
+  }
+
+  header {
+    border-radius: 10px;
+  }
+
+  section:nth-child(4){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  section:nth-child(4) div{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    top: 50px;
+    padding: 10px;
+  }
+
+  header {
+    border-radius: 0;
+  }
+
+  header ul li:last-child {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body {
+    top: 70px;
+  }
+}
