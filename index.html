@@ -8,16 +8,31 @@
 </head>
 <body>
   <header>
-    <div>FleetEase</div>
-    <nav>
+    <div class="logo">FleetEase</div>
+    <nav class="navigation">
       <ul>
-        <li>Home</li>
-        <li>Our Services</li>
-        <li>Subscribe</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">Services</a></li>
+        <li><a href="/">Subscribe</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Contact</a></li>
       </ul>
     </nav>
+    <div id="hamburger" class="">
+      <span id="pointer" class="">&#10095</span>
+      <button>HAM</button>
+    </div>
+    <div id="hiddenNav" class="hide">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/">Services</a></li>
+          <li><a href="/">Subscribe</a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main>
     <section>
@@ -30,8 +45,10 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates reiciendis tempore ducimus deserunt eum aspernatur in est minima itaque! Laboriosam sit corporis nobis labore a odit ipsum nihil rerum quaerat.
           </p>
           <div>
-            <input type="text" placeholder="Something here">
-            <button>Track</button>
+            <form action="submit">
+              <input type="text" name="firstForm" id="firstForm">
+              <button type="submit">Track</button>
+            </form>
           </div>
         </div>
       </div>
@@ -63,10 +80,10 @@
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim in officiis nostrum accusamus quibusdam delectus temporibus ipsa possimus consectetur.
         </p>
         <div>
-          <button>150K</button>
-          <button>500K</button>
-          <button>10M</button>
-          <button>180K</button>
+          <p>150K</p>
+          <p>500K</p>
+          <p>10M</p>
+          <p>180K</p>
         </div>
       </div>
       <div class="thirdSectionSecondDiv">
@@ -173,5 +190,6 @@
       </div>
     </section>
   </main>
+  <script src="index.js"></script>
 </body>
 </html>
