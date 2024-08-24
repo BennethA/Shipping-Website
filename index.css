@@ -177,11 +177,27 @@ section:first-child {
 
 .firstSectionSecondDiv{
   height: 400px;
-  display: flex;
+}
+
+.firstSectionSecondDiv, .thirdSectionSecondDiv, .fourthSectionSecondDiv{
+  width: 50%;
   overflow: hidden;
   border-radius: 10px;
-  align-items: center;
-  justify-content: center;
+  background-size: cover;
+}
+
+.firstSectionSecondDiv img, .thirdSectionSecondDiv img, .fourthSectionSecondDiv img, .fifthSectionSecondDivCard div:first-child img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.secondDivs img:hover, .secondDivs button img:hover{
+  transform: scale(1.1);
 }
 
 section:nth-child(2) {
@@ -234,8 +250,8 @@ section:nth-child(3) {
 
 .thirdSectionFirstDiv, .thirdSectionSecondDiv{
   width: 50%;
-  height: 100%;
   display: flex;
+  overflow: hidden;
   align-items: center;
   flex-direction: column;
   justify-content: center;
@@ -276,12 +292,7 @@ section:nth-child(3) {
 }
 
 .thirdSectionSecondDiv {
-  display: flex;
   height: 300px;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border-radius: 10px;
 }
 
 section:nth-child(4) {
@@ -307,13 +318,7 @@ section:nth-child(4) {
 }
 
 .fourthSectionSecondDiv {
-  width: 50%;
-  display: flex;
   height: 300px;
-  overflow: hidden;
-  align-items: center;
-  border-radius: 10px;
-  justify-content: center;
 }
 
 section:nth-child(4) p{
@@ -339,6 +344,10 @@ section:nth-child(4) button{
 
 section:nth-child(4) button img{
   width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
 }
 
 section:nth-child(4) button:active{
@@ -382,19 +391,8 @@ section:nth-child(5) {
 }
 
 .fifthSectionSecondDivCard div:first-child {
-  width: 100%;
-  display: flex;
   height: 250px;
-  align-items: center;
-  justify-content: center;
-}
-
-.fifthSectionSecondDivCard div:first-child img {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+  background-size: cover;
 }
 
 .fifthSectionSecondDivCard div:last-child h4 {
